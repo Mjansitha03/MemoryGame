@@ -63,17 +63,17 @@ function flipCard() {
 
   this.classList.add("flip"); //flip the card
 
-  // If firstCard is not setInterval, assign this cards as the first
+  // Assign this cards as the first
   if (!firstCard) {
     firstCard = this;
     return;
   }
-  // Otherwise, assign this card as second
+  // Assign this card as second
   secondCard = this;
   checkMatchCards(); //compare two cards
 }
 
-// Compares the two flipped cards to check if they match
+// Check if both flipped cards match
 function checkMatchCards() {
   const isMatch =
     firstCard.querySelector("img").src === secondCard.querySelector("img").src
