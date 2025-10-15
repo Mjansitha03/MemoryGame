@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/logo.jfif" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main wrapper for the game -->
+    <div class="container">
+      <!-- display the game title -->
+      <div class="header">
+        <h1>Memory Game💕</h1>
+      </div>
+      <!-- container for the game board -->
+      <div class="game-board" id="gameBoard"></div>
+    </div>
+    <!-- overlay message when the player wins -->
+    <div class="win-message" id="winMessage">
+      🎊🎊🎊
+      <h2>You Won the Match!</h2>
+      <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
